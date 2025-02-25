@@ -11,3 +11,9 @@ describe("Romano convertidor", () => {
       expect(Romano(3)).toEqual("iii");
     });
   });
+
+describe("Romano convertidor 7", () => {
+    it("deberia transformar 7 a vii", () => {
+      expect(Romano(7)).toEqual("vii");
+    });
+  });
