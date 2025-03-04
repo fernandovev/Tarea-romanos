@@ -16,5 +16,11 @@ describe("Romano Convertidor", () => {
   it("deberia transformar 35 a xxxv", () => {
     expect(Romano(35)).toEqual("xxxv");
   });
+  it("deberia transformar 100 a xxxv", () => {
+    expect(Romano(100)).toEqual("c");
+  });
+  it("deberia transformar 200 a xxxv", () => {
+    expect(Romano(200)).toEqual("cc");
+  });
 });
 
