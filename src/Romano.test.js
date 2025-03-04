@@ -1,25 +1,20 @@
 import Romano from "./Romano.js";
 
-describe("Romano convertidor 1", () => {
+describe("Romano Convertidor", () => {
   it("deberia transformar 1 a i", () => {
     expect(Romano(1)).toEqual("i");
   });
+  it("deberia transformar 3 a iii", () => {
+    expect(Romano(3)).toEqual("iii");
+  });
+  it("deberia transformar 7 a vii", () => {
+    expect(Romano(7)).toEqual("vii");
+  });
+  it("deberia transformar 13 a ciii", () => {
+      expect(Romano(13)).toEqual("xiii");
+  });
+  it("deberia transformar 35 a xxxv", () => {
+    expect(Romano(35)).toEqual("xxxv");
+  });
 });
 
-describe("Romano convertidor 3", () => {
-    it("deberia transformar 3 a iii", () => {
-      expect(Romano(3)).toEqual("iii");
-    });
-  });
-
-describe("Romano convertidor 7", () => {
-    it("deberia transformar 7 a vii", () => {
-      expect(Romano(7)).toEqual("vii");
-    });
-  });
-
-  describe("Romano convertidor 13", () => {
-    it("deberia transformar 7 a vii", () => {
-      expect(Romano(13)).toEqual("Xiii");
-    });
-  });
